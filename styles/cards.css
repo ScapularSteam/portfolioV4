@@ -1,0 +1,141 @@
+/* Animation keyframes for fade-in */
+
+@keyframes appear{
+    from {
+        opacity: 0;
+        transform: translateX(-50vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes appear2{
+    from {
+        opacity: 0;
+        transform: translateX(50vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes appear3{
+    from {
+        opacity: 0;
+        
+    }
+
+    to {
+        opacity: 1;
+        
+    }
+}
+
+/* Card styling */
+
+.card {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.023);
+    margin: 1.5em;
+    border-radius: 30px;
+    position: relative;
+    min-height: 400px;
+}
+
+.card p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 3%
+}
+
+.card h2 {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 3%
+}
+
+.projects-header {
+    color: white;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    text-align: left;
+    margin-left: 1em;
+}
+
+.timeline-indicator {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.4);
+    margin: 3%
+}
+
+
+
+
+
+/* Section specific styling */
+
+.aimify-overview {
+    display: grid;
+    grid-template-columns: 1.75fr 1.25fr;
+    grid-template-rows: auto;
+
+    animation: appear3 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+.shelf-overview {
+    display: grid;
+    grid-template-columns: 1.25fr 1.75fr;
+    grid-template-rows: auto;
+
+    animation: appear3 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 60%;
+}
+
+.fletchVR-overview {
+    display: grid;
+    grid-template-columns: 1.75fr 1.25fr;
+    grid-template-rows: auto;
+
+    animation: appear3 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+/* Simple divider between content sections */
+
+.divider {
+    display: flex;
+    height: 8vh;
+}
+
+/* Footer section */
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 2em;
+}
+
+footer p {
+
+    
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}

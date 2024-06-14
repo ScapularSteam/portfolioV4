@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="styles/navbar.css">
         <link rel="stylesheet" href="styles/global.css">
         <link rel="stylesheet" href="styles/hero.css">
+        <link rel="stylesheet" href="styles/cards.css">
 
         <!--Google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +30,7 @@
                 <ul class="navbar-links">
                     <li><a href="" class="navbar-link">Projects</a></li>
                     <li><a href="" class="navbar-link">Blog</a></li>
-                    <li><a href="" class="navbar-link">Github</a></li>
+                    <li><a href="https://github.com/ScapularSteam" class="navbar-link">Github</a></li>
                 </ul>
             </div>
         </div>
@@ -39,10 +40,68 @@
         <div class="hero">
             <div class="intro">
                 <h1 class="intro-title">Hi! I'm David!</h1>
-                <p class="intro-text">I'm an aspiring software engineer based in the UK. I have experiance in using Python, Javascript, HTML and CSS, and I'm working on learning React Native, with learning C++ on the backlog of things to do.</p>
-                <p class="intro-text">In terms of projects, I have designed and manufactured a minimalistic deskshelf, and I'm currently working on an archery scoring app named Aimify to track scores and progress over time.</p>
+                <p class="intro-text">I'm an aspiring software engineer based in the UK, who also goes by the publishing name Fletchworks online. I have experiance in using Python, Javascript, HTML and CSS, and I'm working on learning React Native, with learning C++ on the backlog of things to do.</p>
+                <p class="intro-text">I have worked, and am working on various projects, such as a minimalistic desk shelf, an archery scoring app, and other projects, such as custom SlimeVR mainboards</p>
+                <p class="intro-text">Additionally, I have interests in aviation, hence the BBMF squadron Lancaster bomber pictured here.</p>
             </div>
         </div>
+
+        <!--Projects-->
+
+        <div>
+            <h2 class="projects-header">Featured projects</h2>
+        </div>
+
+        <div class="aimify-overview">
+            <div class="card">
+                
+            </div>
+            <div class="card">
+                <h2 class="card-header">Aimify</h2>
+                <h4 class="timeline-indicator">In development</h4>
+                <p class="card-text">Aimify is an archery scoring app that is being developed to solve a common issue with the sport, scoring. In between shoots, known as 'ends', archers must awkwardly stand at a target, noting down scores on either paper or their phones</p>
+                <p class="card-text">Using an instance segmentation model trained on a custom dataset, Aimify will detect every arrow on each photo snapped by the user then score accordingly, saving time which can be spent on what is important, shooting.</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="shelf-overview">
+            <div class="card">
+                <h2 class="card-header">Desk<sup>2</sup></h2>
+                <h4 class="timeline-indicator">Finished</h4>
+                <p class="card-text">Desk<sup>2</sup> is a minimalistic desk shelf designed under the principle of "Why not have a desk for your desk"</p>
+                <p class="card-text">The end result, designed by Fusion 360, and manufactured using various woodworking techniques, Laser Cutting, and 3D printing, is a 1 meter wide monitor shelf that sits upon your desk</p>
+                <p class="card-text">All the schematics, CAD files, and building guides (rather suggestions), are available on Github under a Creative Commons licence</p>
+            </div>
+
+            <div class="card">
+                
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="fletchVR-overview">
+            <div class="card">
+
+            </div>
+
+            <div class="card">
+                <h2 class="card-header">FletchVR</h2>
+                <h4 class="timeline-indicator">In development</h4>
+                <p class="card-text">FletchVR is an attempt to create a compact motion tracker that relies upon the SlimeVR project's firmware and wiring guides.</p>
+                <p class="card-text">The project was started after a friend had ordered some parts and wanted some help putting them together, and myself not wanting to solder many wires, decided it would be easier to make a PCB and matching case to go with</p>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <footer>
+            <p>Made with 💖 by Fletchworks.</p>
+        </footer>
+
+        
         
     </body>
 </html>

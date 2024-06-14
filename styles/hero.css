@@ -27,10 +27,12 @@
     font-family: "League Spartan", sans-serif;
     font-weight: 700;
     font-size: 5em;
+    text-align: center;
 }
 
 .intro-text{
     color: white;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
+    text-align: center;
 }

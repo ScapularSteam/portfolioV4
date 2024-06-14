@@ -1,6 +1,8 @@
 body {
     margin: 0;
     background-color: #1f2123;
+    /*alternative: #1f2123*/
+    /*#242530*/
 }
 
 img {
@@ -8,6 +10,7 @@ img {
     height: auto;
 }
 
+/*
 * {
     border: 1px solid black;
 }
