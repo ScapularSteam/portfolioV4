@@ -27,11 +27,13 @@
 @keyframes appear3{
     from {
         opacity: 0;
+        scale: 0.9;
         
     }
 
     to {
         opacity: 1;
+        scale: 1;
         
     }
 }
@@ -62,6 +64,11 @@
     margin: 3%
 }
 
+.card-content {
+    padding: 6%;
+    justify-content: center;
+}
+
 .projects-header {
     color: white;
     font-family: "League Spartan", sans-serif;
@@ -86,33 +93,77 @@
 
 .aimify-overview {
     display: grid;
-    grid-template-columns: 1.75fr 1.25fr;
+    grid-template-columns: 1.25fr 1.75fr;
     grid-template-rows: auto;
 
     animation: appear3 linear;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
+
+    background-color: rgba(255, 255, 255, 0.023);
+    
+    border-radius: 30px;
+
+    margin: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .shelf-overview {
+    display: grid;
+    grid-template-columns: 1.75fr 1.25fr;
+    grid-template-rows: auto;
+
+    animation: appear3 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 60%;
+
+    background-color: rgba(255, 255, 255, 0.023);
+    
+    border-radius: 30px;
+
+    margin: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.fletchVR-overview {
     display: grid;
     grid-template-columns: 1.25fr 1.75fr;
     grid-template-rows: auto;
 
     animation: appear3 linear;
     animation-timeline: view();
-    animation-range: entry 0 cover 60%;
-}
-
-.fletchVR-overview {
-    display: grid;
-    grid-template-columns: 1.75fr 1.25fr;
-    grid-template-rows: auto;
-
-    animation: appear3 linear;
-    animation-timeline: view();
     animation-range: entry 0 cover 40%;
+
+    background-color: rgba(255, 255, 255, 0.023);
+    
+    border-radius: 30px;
+
+    margin: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
+
+/* Responsive design */
+
+@media (max-width: 1000px){
+    .aimify-overview{
+        grid-template-columns: 1fr;
+        
+    }
+    .shelf-overview{
+        grid-template-columns: 1fr;
+        
+    }
+    .fletchVR-overview{
+        grid-template-columns: 1fr;
+        
+    }
+    
+}
+
+
 
 /* Simple divider between content sections */
 
