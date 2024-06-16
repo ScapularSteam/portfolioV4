@@ -32,6 +32,10 @@ li {
     font-size: 1em;
 }
 
+.navbar-link:hover {
+    text-decoration: none;
+}
+
 .logo {
     display: block;
     max-height: 100%;
