@@ -64,6 +64,10 @@
     margin: 3%
 }
 
+.card img {
+    border-radius: 30px;
+}
+
 
 .card-content {
     padding: 6%;
@@ -92,6 +96,10 @@
     font-size: 2em;
     text-align: left;
     margin-left: 1em;
+
+    animation: appear3 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
 }
 
 .timeline-indicator {
@@ -167,9 +175,38 @@
     min-height: 50vh;
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+    animation: appear3 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+
+    background-color: rgba(255, 255, 255, 0.023);
+    
+    border-radius: 30px;
+
+    margin: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    min-height: 35vh;
+}
+
+.projects-grid a {
+    text-decoration: none;
+}
+
+.projects-grid a:hover {
+    scale: 0.95;
+    transition: 0.3s;
+}
+
 /* Responsive design */
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) {
     .aimify-overview{
         grid-template-columns: 1fr;
         
@@ -182,6 +219,10 @@
         grid-template-columns: 1fr;
         
     }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
     
 }
 
@@ -193,6 +234,7 @@
     display: flex;
     height: 8vh;
 }
+
 
 /* Footer section */
 
