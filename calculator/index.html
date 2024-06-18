@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+
+        <link rel="stylesheet" href="calculator.css">
+        <script src="calculator.js"></script>
+
+        <!--Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <div class="calculator">
+
+
+            <!--Calculaton result gets updated here-->
+            <div class="display">
+                <p>Result:</p>
+                <p id="display-result">Test</p>
+            </div>
+
+            <!--Grid layout for buttons-->
+            <div class="buttons">
+                <div class="numbers">
+
+                    <button class="number" onclick="input('1')">1</button>
+                    <button class="number" onclick="input('2')">2</button>
+                    <button class="number" onclick="input('3')">3</button>
+                    <button class="number" onclick="input('4')">4</button>
+                    <button class="number" onclick="input('5')">5</button>
+                    <button class="number" onclick="input('6')">6</button>
+                    <button class="number" onclick="input('7')">7</button>
+                    <button class="number" onclick="input('8')">8</button>
+                    <button class="number" onclick="input('9')">9</button>
+                    <button class="remove" onclick="del()">Del</button>
+                    <button class="number" onclick="input('0')">0</button>
+                    <button class="equals" onclick="equal()">=</button>
+
+                </div>
+
+                <div class="operators">
+                    <button class="operator" onclick="operator('+')">+</button>
+                    <button class="operator" onclick="operator('-')">-</button>
+                    <button class="operator" onclick="operator('*')">*</button>
+                    <button class="operator" onclick="operator('/')">/</button>
+                </div>
+            </div>
+
+
+        </div>
+    </body>
+</html>
