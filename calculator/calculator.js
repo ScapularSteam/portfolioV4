@@ -39,3 +39,37 @@ function del() {
     update_display();
 
 }
+
+function equals() {
+
+    let operator;
+    let operatorIndex;
+
+    for (let i = 0; i < calculation.length; i++) {
+
+        // Horifically inefficiant way to find the operator in the equation
+        if (calculation[i] === '+') {
+            operator = '+';
+            operatorIndex = i;
+        } else if (calculation[i] === '-') {
+            operator = '-';
+            operatorIndex = i;
+        } else if (calculation[i] === '*') {
+            operator = '*';
+            operatorIndex = i;
+        } else if (calculation[i] === '/') {
+            operator = '/';
+            operatorIndex = i;
+        };
+
+
+        // Parse the two numbers from the array
+        let number1 = calculation[0, operatorIndex - 1];
+        let number2 = calculation[operatorIndex + 1, calculation.length - 1];
+
+        console.log(number1);
+        setTimeout(() => console.log(number2), 1000)
+    };
+
+
+}
