@@ -1,0 +1,30 @@
+
+form {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 5vh;
+    margin: auto;
+    position: absolute;
+    
+    justify-self: center;
+}
+
+form * {
+    padding: 2%;
+}
+
+.container {
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+form p {
+    margin: 0;
+    text-align: center;
+}

@@ -14,3 +14,12 @@ img {
 * {
     border: 1px solid black;
 }
+
+*/
+
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 3%
+}
