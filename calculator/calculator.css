@@ -1,7 +1,7 @@
 .buttons {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    width: 500px;
+    width: 900px;
     height: 500px;
     margin: auto;
 }
@@ -16,23 +16,57 @@
     grid-template-columns: 1fr;
 }
 
+
+/* Buttons */
 .number{
-    width: 100%;
+    width: 100px;
     height: 100px;
-    
+    border-radius: 50px;
+    margin: 30px;
 }
 
 .remove{
-    width: 100%;
+    width: 100px;
     height: 100px;
+    border-radius: 50px;
+    margin: 30px;
 }
 
 .equals{
-    width: 100%;
+    width: 100px;
     height: 100px;
+    border-radius: 50px;
+    margin: 30px;
 }
 
 .operator{
-    width: 100%;
+    width: 100px;
     height: 100px;
+    border-radius: 50px;
+    margin: 30px;
+}
+
+/* Display styling*/
+
+.display {
+    width: 900px;
+    height: 250px;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.text {
+    align-items: center;
+    text-align: center;
+}
+
+.text p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 3%;
+    font-size: 2em;
 }

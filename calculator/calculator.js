@@ -61,15 +61,19 @@ function equals() {
             operator = '/';
             operatorIndex = i;
         };
-
-
-        // Parse the two numbers from the array
-        let number1 = calculation[0, operatorIndex - 1];
-        let number2 = calculation[operatorIndex + 1, calculation.length - 1];
-
-        console.log(number1);
-        setTimeout(() => console.log(number2), 1000)
+        
     };
 
+    // Parse the two numbers from the array
+    let number1 = [];
+    let number2 = [];
+
+    number1 = calculation.slice(0, operatorIndex); // Parses all numbers left of index
+    number2 = calculation.slice(operatorIndex + 1, calculation.length); // Parses all numbers right of index
+
+    
+
+    console.log('number 1:', number1);
+    console.log('number 2:', number2);
 
 }
