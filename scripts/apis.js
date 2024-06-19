@@ -1,10 +1,17 @@
-const url = 'https://jsonplaceholder.typicode.com/users'
-const hackhour = 'https://hackhour.hackclub.com/api/clock/U06LWHNLL3B'
+const url = 'https://cors-anywhere.herokuapp.com/corsdemo/https://hackhour.hackclub.com/api/clock/U06LWHNLL3B'
+
+
+const request = new Request(url, {
+    headers: { 
+        'Content-Type': 'text/html' 
+    }
+})
+
 
 
 async function getData() {
     try{
-        const response = await fetch(hackhour);
+        const response = await fetch(request);
 
         if (response.status === 200) {
             const data = await response.json();
@@ -15,13 +22,19 @@ async function getData() {
         }
         
 
-        return data
-
     } catch(error) {
         console.log('There was an error:', error)
     }
     
 };
+
+getData()
+
+
+
+
+
+
 
 
 
