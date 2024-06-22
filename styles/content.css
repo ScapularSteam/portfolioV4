@@ -197,10 +197,11 @@
 
 .projects-grid a {
     text-decoration: none;
+    scale: 0.96;
 }
 
 .projects-grid a:hover {
-    scale: 0.95;
+    scale: 1;
     transition: 0.3s;
 }
 
