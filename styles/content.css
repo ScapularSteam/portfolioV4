@@ -175,6 +175,26 @@
     min-height: 50vh;
 }
 
+.patch-overview {
+    display: grid;
+    grid-template-columns: 1.25fr 1.75fr;
+    grid-template-rows: auto;
+
+    animation: appear3 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+
+    background-color: rgba(255, 255, 255, 0.023);
+    
+    border-radius: 30px;
+
+    margin: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    min-height: 50vh;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
