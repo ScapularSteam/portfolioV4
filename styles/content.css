@@ -244,6 +244,10 @@
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+    .patch-overview {
+        grid-template-columns: 1fr;
+    }
     
 }
 
